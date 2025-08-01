@@ -1,0 +1,16 @@
+@startuml
+participant User_A
+participant Browser
+participant Backend_API
+participant "AI Agent" as AIAgent
+participant User_B
+
+User_A -> Browser : Types message and clicks Send
+Browser -> Backend_API : POST /messages (message content) [HTTPS]
+Backend_API -> Backend_API : Process message
+Backend_API -> Database : Store message
+Backend_API -> AIAgent : Analyze message (sentiment, keywords, etc.)
+AIAgent --> Backend_API : Analysis result
+Backend_API -> User_B : Push message notification/display
+
+@enduml

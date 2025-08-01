@@ -1,0 +1,41 @@
+services:
+  notetaker_agent:
+    build:
+      context: ./agents
+      dockerfile: Dockerfile.notetaker
+    image: notetaker_agent:latest
+    container_name: notetaker_agent
+    env_file:
+      - .env
+    depends_on:
+      - backend
+  topic_agent:
+    build:
+      context: ./agents
+      dockerfile: Dockerfile.topic
+    image: topic_agent:latest
+    container_name: topic_agent
+    env_file:
+      - .env
+    depends_on:
+      - backend
+  backend:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    image: backend:latest
+    container_name: backend
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./artifacts/database.db:/artifacts/database.db
+  momentum_dashboard:
+    build:
+      context: ./momentum_dashboard
+      dockerfile: Dockerfile
+    image: momentum_dashboard:latest
+    container_name: momentum_dashboard
+    ports:
+      - "5173:5173"

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "us-001",
+    "user_story": "As a Project Manager at a Tech Startup, I want the Note-Taker agent to automatically transcribe meeting discussions, identify speakers, and extract action items so that I can focus on leading the meeting and ensure all decisions and tasks are accurately captured.",
+    "persona": "Sarah",
+    "acceptance_criteria": "Given a meeting in progress, When the Note-Taker agent is active, Then it transcribes all spoken words in real time, labels each speaker, and highlights action items and decisions in the notes."
+  },
+  {
+    "id": "us-002",
+    "user_story": "As a University Researcher and Professor, I want the Scheduler agent to coordinate meeting times across multiple time zones and send out agendas in advance so that my international collaborators and students can easily attend and prepare for meetings.",
+    "persona": "Dr. Ahmed",
+    "acceptance_criteria": "Given a list of participants with different time zones, When a meeting needs to be scheduled, Then the Scheduler agent finds optimal times, sends calendar invites, and distributes the agenda to all attendees at least 24 hours before the meeting."
+  },
+  {
+    "id": "us-003",
+    "user_story": "As an Executive Assistant at a Large Corporation, I want the Note-Taker agent to generate accurate, searchable meeting minutes and sync them to our team tools so that I can quickly review, share, and archive meeting records for executives.",
+    "persona": "Priya",
+    "acceptance_criteria": "Given a completed meeting, When the Note-Taker agent finishes processing, Then it generates a summary with action items, allows keyword search, and syncs the notes to Slack, email, and project management apps."
+  },
+  {
+    "id": "us-004",
+    "user_story": "As a Remote Team Lead for a Nonprofit Organization, I want the Facilitator agent to monitor participation and prompt quieter team members to contribute so that all voices are heard and meetings are more inclusive.",
+    "persona": "James",
+    "acceptance_criteria": "Given an ongoing meeting, When the Facilitator agent detects that certain participants have not spoken for a set period, Then it prompts those participants to share their thoughts and manages dominant speakers to balance participation."
+  },
+  {
+    "id": "us-005",
+    "user_story": "As a New Hire in a Consulting Firm, I want the unified dashboard to display live notes, agenda progress, and action items during meetings so that I can easily follow along, understand the meeting flow, and participate confidently.",
+    "persona": "Maria",
+    "acceptance_criteria": "Given an active meeting, When the user accesses the dashboard, Then it displays real-time transcribed notes, current agenda topic, elapsed time, and a list of action items as they are identified."
+  }
+]

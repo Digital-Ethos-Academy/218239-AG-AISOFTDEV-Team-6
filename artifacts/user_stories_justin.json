@@ -1,0 +1,254 @@
+[
+  {
+    "id": 1,
+    "title": "Real-time Meeting Summarization for Project Managers",
+    "description": "As a Project Manager (Sarah Chen), I want the Note Taker Agent to provide real-time summaries and extract key points during the meeting, so that I can focus on facilitating without constantly scribbling notes and have a clear overview of decisions as they happen.",
+    "acceptance_criteria": [
+      "The agent accurately identifies and summarizes key decisions as they occur.",
+      "The agent extracts action items, including who is assigned and a suggested timeline, dynamically during the meeting.",
+      "Key discussion points are summarized and updated in real-time.",
+      "The dynamic summaries are accessible to the host during the meeting."
+    ],
+    "persona": "Sarah Chen"
+  },
+  {
+    "id": 2,
+    "title": "Concise Meeting Summaries for Department Heads",
+    "description": "As a Department Head (Maria Garcia), I want the Note Taker Agent to generate concise, high-level summaries of meetings I may not have attended, so that I can quickly grasp key outcomes and decisions without sifting through lengthy minutes.",
+    "acceptance_criteria": [
+      "The agent generates a post-meeting summary document that is brief and to the point.",
+      "The summary highlights critical discussion points, key decisions, and major action items.",
+      "The summary is easily digestible for quick review (e.g., bullet points, executive summary format)."
+    ],
+    "persona": "Maria Garcia"
+  },
+  {
+    "id": 3,
+    "title": "Speaker Identification & Timestamping for Review",
+    "description": "As a Project Manager (Sarah Chen), I want the Note Taker Agent to identify different speakers and timestamp their contributions, so that I can easily review who said what and quickly navigate specific parts of the meeting transcript for clarity or follow-up.",
+    "acceptance_criteria": [
+      "The transcript accurately labels each spoken segment with the speaker's name.",
+      "Each spoken segment in the transcript includes an accurate timestamp.",
+      "Users can easily navigate to specific points in the transcript using timestamps."
+    ],
+    "persona": "Sarah Chen"
+  },
+  {
+    "id": 4,
+    "title": "Automated Action Item Tracking for Project Managers",
+    "description": "As a Project Manager (Sarah Chen), I want the Note Taker Agent to specifically flag action items, assign them to identified individuals, and suggest potential deadlines, so that I can ensure accountability and streamline post-meeting follow-up without manual transcription.",
+    "acceptance_criteria": [
+      "The agent identifies and flags action items within the meeting discussion.",
+      "The agent correctly identifies and assigns action items to specific individuals mentioned.",
+      "The agent suggests plausible deadlines for action items based on context or predefined rules.",
+      "Action items are clearly presented and distinguishable from general meeting notes in the output."
+    ],
+    "persona": "Sarah Chen"
+  },
+  {
+    "id": 5,
+    "title": "Personalized Action Item Summary for Team Members",
+    "description": "As a Software Engineer (David Lee), I want the Note Taker Agent to accurately capture and highlight action items assigned specifically to me, so that I can easily see my responsibilities without reviewing the entire meeting transcript.",
+    "acceptance_criteria": [
+      "The agent accurately identifies action items assigned directly to David Lee.",
+      "David receives a clear, concise summary of only his assigned action items after the meeting.",
+      "The summary of assigned items includes all necessary details (e.g., description, suggested deadline, context)."
+    ],
+    "persona": "David Lee"
+  },
+  {
+    "id": 6,
+    "title": "Sentiment and Tone Analysis for Team Dynamics Insight",
+    "description": "As a Project Manager (Sarah Chen), I want the Note Taker Agent to analyze the emotional tone and sentiment of the conversation throughout the meeting, so that I can gain deeper insights into team dynamics, identify areas of strong agreement or disagreement, and address potential frustrations proactively.",
+    "acceptance_criteria": [
+      "The agent identifies and highlights segments of positive sentiment (e.g., agreement, excitement).",
+      "The agent identifies and highlights segments of negative sentiment (e.g., disagreement, frustration, confusion).",
+      "The sentiment analysis is presented in a contextual manner, linking it to specific discussion points.",
+      "The analysis provides a visual or textual overview of sentiment trends during the meeting."
+    ],
+    "persona": "Sarah Chen"
+  },
+  {
+    "id": 7,
+    "title": "Q&A and Unanswered Question Identification for Follow-up",
+    "description": "As a Project Manager (Sarah Chen), I want the Note Taker Agent to automatically detect questions asked during the meeting and flag those that remain unanswered or require further follow-up, so that no query is lost and I can ensure comprehensive follow-up.",
+    "acceptance_criteria": [
+      "The agent accurately identifies questions posed by participants during the meeting.",
+      "The agent flags questions that were not explicitly answered or addressed during the meeting.",
+      "Unanswered questions are clearly listed in the meeting summary as requiring follow-up."
+    ],
+    "persona": "Sarah Chen"
+  },
+  {
+    "id": 8,
+    "title": "Customizable Output Formats & Integration for Project Management",
+    "description": "As a Project Manager (Sarah Chen), I want the Note Taker Agent to provide customizable output formats and seamlessly integrate with our project management tools (e.g., Jira, Asana), so that I can easily transfer meeting outcomes into our team's existing workflows without manual data entry.",
+    "acceptance_criteria": [
+      "Users can select from various output formats (e.g., bullet points, detailed transcript, summary report).",
+      "The tool allows for direct integration with specified project management software.",
+      "Action items can be directly pushed as tasks to the integrated project management software.",
+      "Users can export meeting notes in common document formats (e.g., PDF, Markdown)."
+    ],
+    "persona": "Sarah Chen"
+  },
+  {
+    "id": 9,
+    "title": "Intelligent Availability & Conflict Resolution for Meeting Scheduling",
+    "description": "As a Project Manager (Sarah Chen), I want the Schedule Maker Agent to intelligently scan participants' calendars and suggest optimal meeting times, proactively identifying conflicts, so that I can easily find a slot that works for everyone and avoid manual coordination.",
+    "acceptance_criteria": [
+      "The agent accurately identifies and suggests optimal meeting times based on all participants' availability (with necessary permissions).",
+      "The agent proactively identifies and highlights potential scheduling conflicts, including time zones.",
+      "The agent proposes alternative meeting slots to resolve identified conflicts efficiently."
+    ],
+    "persona": "Sarah Chen"
+  },
+  {
+    "id": 10,
+    "title": "Outcome-Based Scheduling for Project Managers",
+    "description": "As a Project Manager (Sarah Chen), I want the Schedule Maker Agent to intelligently propose and schedule follow-up meetings or allocate time for related tasks based on identified action items and unaddressed topics from the Note Taker Agent, so that critical outcomes are not forgotten and project progress remains on track.",
+    "acceptance_criteria": [
+      "The agent automatically suggests follow-up meetings based on unresolved action items or discussion points from prior meetings.",
+      "The agent can propose dedicated time blocks for tasks related to identified action items.",
+      "The agent can map and understand dependencies between different action items or topics when suggesting scheduling."
+    ],
+    "persona": "Sarah Chen"
+  },
+  {
+    "id": 11,
+    "title": "Strategic Follow-up Scheduling for Department Heads",
+    "description": "As a Department Head (Maria Garcia), I want the Schedule Maker Agent to intelligently propose follow-up meetings for high-priority unaddressed topics or critical action items, so that I can be confident that strategic outcomes lead to tangible next steps across my teams.",
+    "acceptance_criteria": [
+      "The agent identifies high-priority unresolved topics or critical action items from meeting summaries.",
+      "The agent proposes new calendar events for these follow-ups, including relevant context.",
+      "The proposed events are only for essential, high-impact items relevant to my overview."
+    ],
+    "persona": "Maria Garcia"
+  },
+  {
+    "id": 12,
+    "title": "Automated Resource Allocation & Booking for Meetings",
+    "description": "As a Project Manager (Sarah Chen), I want the Schedule Maker Agent to integrate with internal systems to automatically check availability and book necessary resources such as meeting rooms or virtual conferencing licenses, so that I don't have to manually manage logistical details for each meeting.",
+    "acceptance_criteria": [
+      "The agent successfully integrates with specified internal resource booking systems.",
+      "The agent accurately checks the availability of requested resources (e.g., meeting rooms, virtual licenses).",
+      "The agent can automatically book available resources upon user confirmation."
+    ],
+    "persona": "Sarah Chen"
+  },
+  {
+    "id": 13,
+    "title": "Dynamic Agenda Integration & Pre-reads Distribution",
+    "description": "As a Project Manager (Sarah Chen), I want the Schedule Maker Agent to dynamically update subsequent meeting agendas based on discussions and outcomes from the current meeting (e.g., moving incomplete topics, adding new ones) and automatically distribute relevant pre-read materials to attendees beforehand, so that future meetings are well-prepared and attendees have all necessary context.",
+    "acceptance_criteria": [
+      "The agent automatically updates upcoming meeting agendas based on topics moved from previous meetings or new action items.",
+      "The agent automatically attaches relevant previous meeting notes or linked documents as pre-read materials for new meetings.",
+      "Attendees receive timely notifications with the updated agenda and pre-reads before the meeting."
+    ],
+    "persona": "Sarah Chen"
+  },
+  {
+    "id": 14,
+    "title": "Prioritization & Time Blocking Suggestions for Optimized Schedules",
+    "description": "As a Project Manager (Sarah Chen), I want the Schedule Maker Agent to analyze the importance and urgency of tasks/meetings and suggest ideal time blocks in participants' calendars, accounting for deep work periods or existing commitments, so that I can optimize our schedules and protect important focused work periods for my team.",
+    "acceptance_criteria": [
+      "The agent analyzes the urgency and importance of proposed tasks or meetings.",
+      "The agent suggests optimal time slots in participants' calendars that minimize disruption.",
+      "The agent considers and attempts to protect pre-defined 'deep work' periods or existing high-priority commitments.",
+      "The suggestions help optimize overall team scheduling efficiency."
+    ],
+    "persona": "Sarah Chen"
+  },
+  {
+    "id": 15,
+    "title": "Automated Calendar Updates with Protected Focus Time for Team Members",
+    "description": "As a Software Engineer (David Lee), I want the Schedule Maker Agent to automatically add new meetings or tasks to my calendar, respecting my existing commitments and deep work periods, so that my focus time is protected and my schedule is optimized without manual effort.",
+    "acceptance_criteria": [
+      "The agent automatically adds relevant new meetings or tasks to David's calendar.",
+      "The agent attempts to avoid scheduling new items during David's pre-defined 'deep work' blocks.",
+      "New items are added to the calendar without requiring manual adjustment or intervention from David.",
+      "The calendar updates accurately reflect all assigned responsibilities and follow-ups."
+    ],
+    "persona": "David Lee"
+  },
+  {
+    "id": 16,
+    "title": "Real-time Topic Drift Detection for Meeting Facilitation",
+    "description": "As a Project Manager (Sarah Chen), I want the Stay on Topic Agent to continuously analyze the conversation flow against the predefined agenda and meeting objectives, identifying instances when discussions veer significantly off-topic in real-time, so that I can proactively guide the conversation back on track and ensure meetings remain productive.",
+    "acceptance_criteria": [
+      "The agent continuously monitors the conversation against the pre-defined meeting agenda.",
+      "The agent accurately identifies when discussions deviate significantly from the current topic.",
+      "The agent provides a real-time alert or indication to the meeting facilitator (Sarah)."
+    ],
+    "persona": "Sarah Chen"
+  },
+  {
+    "id": 17,
+    "title": "Gentle, Non-Disruptive Nudging for Meeting Hosts",
+    "description": "As a Project Manager (Sarah Chen), I want the Stay on Topic Agent to provide gentle, non-disruptive cues to guide the conversation back on track when it drifts, so that I can re-focus the discussion without interrupting the flow or embarrassing participants.",
+    "acceptance_criteria": [
+      "Nudges can be configured as private notifications to the meeting host (Sarah).",
+      "Nudges can be configured as subtle visual indicators on a shared screen, visible only to the host or specific participants.",
+      "Nudging mechanisms avoid public announcements that disrupt the meeting's natural flow.",
+      "The nudges are effective in prompting the host to re-center the discussion."
+    ],
+    "persona": "Sarah Chen"
+  },
+  {
+    "id": 18,
+    "title": "Discreet Focus Assistance for Team Members",
+    "description": "As a Software Engineer (David Lee), I want the Stay on Topic Agent to discreetly help keep meetings focused on the agenda, so that discussions are concise and I can efficiently contribute without wasting time on irrelevant tangents.",
+    "acceptance_criteria": [
+      "The agent's interventions (via the host) result in meetings that generally adhere more closely to the agenda.",
+      "David perceives meetings as more efficient and focused when the agent is active.",
+      "The agent's mechanisms for keeping on topic are not overtly disruptive or distracting to participants like David."
+    ],
+    "persona": "David Lee"
+  },
+  {
+    "id": 19,
+    "title": "Parking Lot Suggestion & Management for Off-topic Ideas",
+    "description": "As a Project Manager (Sarah Chen), I want the Stay on Topic Agent to suggest moving valuable but off-topic discussions to a designated 'parking lot' and automatically add them to potential future agenda items, so that good ideas aren't lost while the current meeting stays focused.",
+    "acceptance_criteria": [
+      "The agent detects when a valuable, but off-topic, discussion emerges.",
+      "The agent suggests a 'parking lot' as an option for these discussions.",
+      "Parked topics are captured and clearly visible within the meeting notes.",
+      "Parked topics can be easily added to future meeting agendas or follow-up tasks."
+    ],
+    "persona": "Sarah Chen"
+  },
+  {
+    "id": 20,
+    "title": "Time Management & Pacing Alerts for Facilitators",
+    "description": "As a Project Manager (Sarah Chen), I want the Stay on Topic Agent to monitor the time spent on each agenda item and provide alerts, so that I can effectively manage the meeting's pace and ensure we cover all planned topics within the allotted time.",
+    "acceptance_criteria": [
+      "The agent accurately tracks the time spent on each item according to the agenda.",
+      "The agent provides configurable alerts when an agenda item is nearing its allocated time limit.",
+      "The agent provides alerts when an agenda item is running over its schedule.",
+      "Alerts are delivered discreetly to the host (e.g., visual cue, private notification)."
+    ],
+    "persona": "Sarah Chen"
+  },
+  {
+    "id": 21,
+    "title": "Agenda Item Re-framing & Prompting for Focus",
+    "description": "As a Project Manager (Sarah Chen), I want the Stay on Topic Agent to suggest specific questions, keywords, or summary points related to the current agenda item, so that I can subtly re-focus the discussion and encourage participants to return to the core objective.",
+    "acceptance_criteria": [
+      "The agent provides contextually relevant questions or keywords related to the current agenda item.",
+      "Suggestions are provided to the host in real-time when topic drift is detected.",
+      "The suggested prompts help the host effectively guide the discussion back to the agenda item."
+    ],
+    "persona": "Sarah Chen"
+  },
+  {
+    "id": 22,
+    "title": "Contextual Questioning for Clarity and Decision-Making",
+    "description": "As a Project Manager (Sarah Chen), I want the Stay on Topic Agent to subtly prompt with contextual questions like 'How does this relate to [current agenda item]?' or 'What's the decision point we're trying to reach here?' if a discussion becomes circular or loses focus, so that I can drive the conversation towards clarity and decision-making.",
+    "acceptance_criteria": [
+      "The agent identifies discussions that are becoming circular, redundant, or losing focus.",
+      "The agent suggests relevant, open-ended questions designed to re-center the conversation or prompt a decision.",
+      "Questions are provided discreetly to the host.",
+      "The suggested questions help in guiding the discussion towards actionable outcomes."
+    ],
+    "persona": "Sarah Chen"
+  }
+]

@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Momentum 🚀</title>
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; margin: 2rem; background: #f9f9f9; color: #222; }
+    h1, h2, h3, h4 { color: #1a237e; }
+    code, pre { background: #f4f4f4; border-radius: 4px; padding: 2px 6px; font-family: 'Fira Mono', monospace; }
+    pre { padding: 1em; overflow-x: auto; }
+    hr { border: none; border-top: 1px solid #ddd; margin: 2em 0; }
+    ul, ol { margin-left: 2em; }
+    a { color: #1565c0; }
+  </style>
+</head>
+<body>
+
+<h1>Momentum 🚀</h1>
+<p><strong>Transforming Meetings into Actionable Outcomes</strong></p>
+
+<p>
+  <a href="https://github.com/your-org/momentum">
+    <img src="https://img.shields.io/badge/status-in_development-orange.svg" alt="Status">
+  </a>
+  <a href="https://www.python.org/">
+    <img src="https://img.shields.io/badge/python-3.9+-blue.svg" alt="Python Version">
+  </a>
+  <a href="https://fastapi.tiangolo.com/">
+    <img src="https://img.shields.io/badge/Framework-FastAPI-teal.svg" alt="Framework">
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License">
+  </a>
+</p>
+
+<hr>
+
+<h2>📖 Table of Contents</h2>
+<ul>
+  <li><a href="#-overview">Overview</a></li>
+  <li><a href="#-key-features">🌟 Key Features</a></li>
+  <li><a href="#️-tech-stack">⚙️ Tech Stack</a></li>
+  <li><a href="#-getting-started">🚀 Getting Started</a>
+    <ul>
+      <li><a href="#prerequisites">Prerequisites</a></li>
+      <li><a href="#installation">Installation</a></li>
+      <li><a href="#running-the-application">Running the Application</a></li>
+    </ul>
+  </li>
+  <li><a href="#-api-endpoints">🔌 API Endpoints</a>
+    <ul>
+      <li><a href="#organizations">Organizations</a></li>
+      <li><a href="#users">Users</a></li>
+      <li><a href="#meetings">Meetings</a></li>
+      <li><a href="#meeting-participants">Meeting Participants</a></li>
+      <li><a href="#meeting-agendas">Meeting Agendas</a></li>
+      <li><a href="#agenda-items">Agenda Items</a></li>
+      <li><a href="#transcripts">Transcripts</a></li>
+      <li><a href="#transcript-entries">Transcript Entries</a></li>
+      <li><a href="#action-items">Action Items</a></li>
+      <li><a href="#decisions">Decisions</a></li>
+      <li><a href="#meeting-summaries">Meeting Summaries</a></li>
+      <li><a href="#user-integrations">User Integrations</a></li>
+      <li><a href="#meeting-analytics">Meeting Analytics</a></li>
+      <li><a href="#participant-analytics">Participant Analytics</a></li>
+    </ul>
+  </li>
+</ul>
+
+<hr>
+
+<h2 id="overview">🌐 Overview</h2>
+<p>
+Momentum is an intelligent, AI-powered platform designed to automate the entire meeting lifecycle. Our vision is to solve the universal problem of inefficient, poorly documented meetings by transforming them from a necessary chore into a focused, productive, and collaborative engine for progress.
+</p>
+<p>
+This repository contains the backend API for the Momentum platform, built with FastAPI and SQLAlchemy. It provides a robust, scalable foundation for managing users, meetings, transcriptions, and the intelligence that powers the Momentum experience.
+</p>
+
+<h2 id="-key-features">🌟 Key Features</h2>
+<p>Based on our product vision, the Momentum platform provides the following core features:</p>
+<ul>
+  <li>🤖 <strong>AI-Powered Transcription &amp; Intelligence:</strong> Automatically transcribe meetings, identify speakers, and extract action items and decisions in real-time.</li>
+  <li>🗓️ <strong>Smart Scheduling &amp; Preparation:</strong> Coordinate meeting times across multiple time zones and automatically distribute agendas, ensuring everyone is prepared.</li>
+  <li>👨‍🏫 <strong>In-Meeting Facilitation:</strong> Monitor participation to encourage more inclusive conversations and provide post-meeting analytics on speaker equity.</li>
+  <li>📊 <strong>Live Meeting Dashboard:</strong> A unified view of the agenda, real-time notes, and captured action items, perfect for keeping everyone on the same page, especially new hires.</li>
+  <li>🔗 <strong>Seamless Integrations:</strong> Sync meeting minutes, action items, and summaries to your favorite tools like Google Workspace, Microsoft 365, Slack, and Jira.</li>
+  <li>🔍 <strong>Searchable Archive:</strong> A permanent, searchable record of all meeting discussions, decisions, and outcomes.</li>
+</ul>
+
+<h2 id="️-tech-stack">⚙️ Tech Stack</h2>
+<ul>
+  <li><strong>Backend Framework:</strong> <a href="https://fastapi.tiangolo.com/">FastAPI</a></li>
+  <li><strong>Database ORM:</strong> <a href="https://www.sqlalchemy.org/">SQLAlchemy</a></li>
+  <li><strong>Data Validation:</strong> <a href="https://pydantic-docs.helpmanual.io/">Pydantic</a></li>
+  <li><strong>Language:</strong> Python 3.9+</li>
+  <li><strong>Server:</strong> <a href="https://www.uvicorn.org/">Uvicorn</a></li>
+</ul>
+
+<h2 id="-getting-started">🚀 Getting Started</h2>
+<p>Follow these instructions to get the API server up and running on your local machine for development and testing purposes.</p>
+
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+  <li>Python 3.9+</li>
+  <li><code>pip</code> and <code>venv</code></li>
+  <li><a href="https://git-scm.com/">Git</a></li>
+</ul>
+
+<h3 id="installation">Installation</h3>
+<ol>
+  <li>
+    <strong>Clone the repository:</strong>
+    <pre><code>git clone https://github.com/your-org/momentum.git
+cd momentum
+</code></pre>
+  </li>
+  <li>
+    <strong>Create and activate a virtual environment:</strong>
+    <ul>
+      <li>On macOS and Linux:
+        <pre><code>python3 -m venv venv
+source venv/bin/activate
+</code></pre>
+      </li>
+      <li>On Windows:
+        <pre><code>python -m venv venv
+.\venv\Scripts\activate
+</code></pre>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <strong>Install dependencies:</strong>
+    <pre><code>pip install -r requirements.txt
+</code></pre>
+    <em>(Note: A <code>requirements.txt</code> file should be created with the following content)</em>
+    <pre><code>fastapi[all]
+sqlalchemy
+uvicorn
+# Add other dependencies like psycopg2-binary if using PostgreSQL
+</code></pre>
+  </li>
+  <li>
+    <strong>Configure your database:</strong>
+    <p>The application uses SQLAlchemy to connect to a database. The database connection string is configured in <code>database.py</code>. The system automatically creates the required tables on startup. For local development, you can use SQLite.</p>
+  </li>
+</ol>
+
+<h3 id="running-the-application">Running the Application</h3>
+<ol>
+  <li>
+    <strong>Start the server:</strong>
+    <pre><code>uvicorn main:app --reload
+</code></pre>
+    <p>The <code>--reload</code> flag will automatically restart the server when you make code changes.</p>
+  </li>
+  <li>
+    <strong>Access the API:</strong>
+    <p>The API will be available at <code>http://127.0.0.1:8000</code>.</p>
+  </li>
+  <li>
+    <strong>Explore the documentation:</strong>
+    <p>FastAPI automatically generates interactive API documentation. Open your browser and navigate to:</p>
+    <ul>
+      <li><strong>Swagger UI:</strong> <a href="http://127.0.0.1:8000/docs">http://127.0.0.1:8000/docs</a></li>
+      <li><strong>ReDoc:</strong> <a href="http://127.0.0.1:8000/redoc">http://127.0.0.1:8000/redoc</a></li>
+    </ul>
+  </li>
+</ol>
+
+<hr>
+
+<h2 id="-api-endpoints">🔌 API Endpoints</h2>
+<p>All endpoints are prefixed with the base URL: <code>http://127.0.0.1:8000</code></p>
+
+<h3 id="organizations">Organizations</h3>
+<p>Manages company or team accounts.</p>
+<ul>
+  <li>
+    <strong>POST</strong> <code>/organizations/</code> - Create a new organization.
+    <pre><code>curl -X POST "http://127.0.0.1:8000/organizations/" \
+-H "Content-Type: application/json" \
+-d '{"name": "Innovate Corp", "domain": "innovatecorp.com"}'
+</code></pre>
+  </li>
+  <li>
+    <strong>GET</strong> <code>/organizations/</code> - Retrieve a list of all organizations.
+    <pre><code>curl -X GET "http://127.0.0.1:8000/organizations/"
+</code></pre>
+  </li>
+  <li>
+    <strong>GET</strong> <code>/organizations/{id}</code> - Retrieve a specific organization.
+    <pre><code>curl -X GET "http://127.0.0.1:8000/organizations/1"
+</code></pre>
+  </li>
+  <li>
+    <strong>PUT</strong> <code>/organizations/{id}</code> - Update an organization.
+    <pre><code>curl -X PUT "http://127.0.0.1:8000/organizations/1" \
+-H "Content-Type: application/json" \
+-d '{"name": "Innovate Corporation"}'
+</code></pre>
+  </li>
+  <li>
+    <strong>DELETE</strong> <code>/organizations/{id}</code> - Delete an organization.
+    <pre><code>curl -X DELETE "http://127.0.0.1:8000/organizations/1"
+</code></pre>
+  </li>
+</ul>
+
+<h3 id="users">Users</h3>
+<p>Manages user accounts.</p>
+<ul>
+  <li>
+    <strong>POST</strong> <code>/users/</code> - Create a new user.
+    <pre><code>curl -X POST "http://127.0.0.1:8000/users/" \
+-H "Content-Type: application/json" \
+-d '{"username": "sarah_pm", "email": "sarah.p@innovatecorp.com", "password": "securepassword123", "organization_id": 1}'
+</code></pre>
+  </li>
+  <li>
+    <strong>GET</strong> <code>/users/</code> - Retrieve all users.
+    <pre><code>curl -X GET "http://127.0.0.1:8000/users/"
+</code></pre>
+  </li>
+  <li>
+    <strong>GET</strong> <code>/users/{id}</code> - Retrieve a specific user.
+    <pre><code>curl -X GET "http://127.0.0.1:8000/users/1"
+</code></pre>
+  </li>
+  <li>
+    <strong>PUT</strong> <code>/users/{id}</code> - Update a user.
+    <pre><code>curl -X PUT "http://127.0.0.1:8000/users/1" \
+-H "Content-Type: application/json" \
+-d '{"email": "sarah.projectmanager@innovatecorp.com"}'
+</code></pre>
+  </li>
+  <li>
+    <strong>DELETE</strong> <code>/users/{id}</code> - Delete a user.
+    <pre><code>curl -X DELETE "http://127.0.0.1:8000/users/1"
+</code></pre>
+  </li>
+</ul>
+
+<h3 id="meetings">Meetings</h3>
+<p>Manages meeting records.</p>
+<ul>
+  <li>
+    <strong>POST</strong> <code>/meetings/</code> - Schedule a new meeting.
+    <pre><code>curl -X POST "http://127.0.0.1:8000/meetings/" \
+-H "Content-Type: application/json" \
+-d '{"title": "Q4 Project Kickoff", "start_time": "2023-12-01T14:00:00Z", "end_time": "2023-12-01T15:00:00Z", "organization_id": 1}'
+</code></pre>
+  </li>
+  <li>
+    <strong>GET</strong> <code>/meetings/</code> - Retrieve all meetings.
+    <pre><code>curl -X GET "http://127.0.0.1:8000/meetings/"
+</code></pre>
+  </li>
+  <li>
+    <strong>GET</strong> <code>/meetings/{id}</code> - Retrieve a specific meeting.
+    <pre><code>curl -X GET "http://127.0.0.1:8000/meetings/1"
+</code></pre>
+  </li>
+  <li>
+    <strong>PUT</strong> <code>/meetings/{id}</code> - Update a meeting's details.
+    <pre><code>curl -X PUT "http://127.0.0.1:8000/meetings/1" \
+-H "Content-Type: application/json" \
+-d '{"title": "Q4 Project Kickoff & Brainstorm"}'
+</code></pre>
+  </li>
+  <li>
+    <strong>DELETE</strong> <code>/meetings/{id}</code> - Delete a meeting.
+    <pre><code>curl -X DELETE "http://127.0.0.1:8000/meetings/1"
+</code></pre>
+  </li>
+</ul>
+
+<h3 id="meeting-participants">Meeting Participants</h3>
+<p>Manages the relationship between users and meetings.</p>
+<ul>
+  <li>
+    <strong>POST</strong> <code>/meeting_participants/</code> - Add a participant to a meeting.
+    <pre><code>curl -X POST "http://127.0.0.1:8000/meeting_participants/" \
+-H "Content-Type: application/json" \
+-d '{"user_id": 1, "meeting_id": 1, "role": "host"}'
+</code></pre>
+  </li>
+  <li>
+    <strong>GET</strong> <code>/meeting_participants/</code> - Retrieve all participant records.
+    <pre><code>curl -X GET "http://127.0.0.1:8000/meeting_participants/"
+</code></pre>
+  </li>
+  <li>
+    <strong>GET</strong> <code>/meeting_participants/{id}</code> - Retrieve a specific participant record.
+    <pre><code>curl -X GET "http://127.0.0.1:8000/meeting_participants/1"
+</code></pre>
+  </li>
+  <li>
+    <strong>PUT</strong> <code>/meeting_participants/{id}</code> - Update a participant's role.
+    <pre><code>curl -X PUT "http://127.0.0.1:8000/meeting_participants/1" \
+-H "Content-Type: application/json" \
+-d '{"role": "presenter"}'
+</code></pre>
+  </li>
+  <li>
+    <strong>DELETE</strong> <code>/meeting_participants/{id}</code> - Remove a participant from a meeting.
+    <pre><code>curl -X DELETE "http://127.0.0.1:8000/meeting_participants/1"
+</code></pre>
+  </li>
+</ul>
+
+<h3 id="meeting-agendas">Meeting Agendas</h3>
+<p>Manages the agenda for a specific meeting. <em>(Note: Update is not supported for the top-level agenda.)</em></p>
+<ul>
+  <li>
+    <strong>POST</strong> <code>/meeting_agendas/</code> - Create an agenda for a meeting.
+    <pre><code>curl -X POST "http://127.0.0.1:8000/meeting_agendas/" \
+-H "Content-Type: application/json" \
+-d '{"meeting_id": 1, "title": "Kickoff Agenda"}'
+</code></pre>
+  </li>
+  <li>
+    <strong>GET</strong> <code>/meeting_agendas/</code> - Retrieve all agendas.
+    <pre><code>curl -X GET "http://127.0.0.1:8000/meeting_agendas/"
+</code></pre>
+  </li>
+  <li>
+    <strong>GET</strong> <code>/meeting_agendas/{id}</code> - Retrieve a specific agenda.
+    <pre><code>curl -X GET "http://127.0.0.1:8000/meeting_agendas/1"
+</code></pre>
+  </li>
+  <li>
+    <strong>DELETE</strong> <code>/meeting_agendas/{id}</code> - Delete an agenda.
+    <pre><code>curl -X DELETE "http://127.0.0.1:8000/meeting_agendas/1"
+</code></pre>
+  </li>
+</ul>
+
+<h3 id="agenda-items">Agenda Items</h3>
+<p>Manages individual items within a meeting agenda.</p>
+<ul>
+  <li>
+    <strong>POST</strong> <code>/agenda_items/</code> - Create a new agenda item.
+    <pre><code>curl -X POST "http://127.0.0.1:8000/agenda_items/" \
+-H "Content-Type: application/json" \
+-d '{"agenda_id": 1, "title": "Introductions", "duration_minutes": 5}'
+</code></pre>
+  </li>
+  <li>
+    <strong>GET</strong> <code>/agenda_items/</code> - Retrieve all agenda items.
+    <pre><code>curl -X GET "http://127.0.0.1:8000/agenda_items/"
+</code></pre>
+  </li>
+  <li>
+    <strong>GET</strong> <code>/agenda_items/{id}</code> - Retrieve a specific agenda item.
+    <pre><code>curl -X GET "http://127.0.0.1:8000/agenda_items/1"
+</code></pre>
+  </li>
+  <li>
+    <strong>PUT</strong> <code>/agenda_items/{id}</code> - Update an agenda item.
+    <pre><code>curl -X PUT "http://127.0.0.1:8000/agenda_items/1" \
+-H "Content-Type: application/json" \
+-d '{"title": "Team Introductions", "duration_minutes": 10}'
+</code></pre>
+  </li>
+  <li>
+    <strong>DELETE</strong> <code>/agenda_items/{id}</code> - Delete an agenda item.
+    <pre><code>curl -X DELETE "http://127.0.0.1:8000/agenda_items/1"
+</code></pre>
+  </li>
+</ul>
+
+<h3 id="transcripts">Transcripts</h3>
+<p>Manages the top-level container for a meeting transcript.</p>
+<ul>
+  <li>
+    <strong>POST</strong> <code>/transcripts/</code> - Create a new transcript record for a meeting.
+    <pre><code>curl -X POST "http://127.0.0.1:8000/transcripts/" \
+-H "Content-Type: application/json" \
+-d '{"meeting_id": 1}'
+</code></pre>
+  </li>
+  <li>
+    <strong>GET</strong> <code>/transcripts/{id}</code> - Retrieve a transcript record.
+    <pre><code>curl -X GET "http://127.0.0.1:8000/transcripts/1"
+</code></pre>
+  </li>
+</ul>
+
+<h3 id="transcript-entries">Transcript Entries</h3>
+<p>Manages individual spoken entries within a transcript. <em>(Note: Update is not supported for entries.)</em></p>
+<ul>
+  <li>
+    <strong>POST</strong> <code>/transcript_entries/</code> - Add a new entry to a transcript.
+    <pre><code>curl -X POST "http://127.0.0.1:8000/transcript_entries/" \
+-H "Content-Type: application/json" \
+-d '{"transcript_id": 1, "participant_id": 1, "text": "Welcome everyone to the Q4 kickoff.", "timestamp": "2023-12-01T14:01:15Z"}'
+</code></pre>
+  </li>
+  <li>
+    <strong>GET</strong> <code>/transcript_entries/</code> - Retrieve all transcript entries.
+    <pre><code>curl -X GET "http://127.0.0.1:8000/transcript_entries/?limit=10"
+</code></pre>
+  </li>
+</ul>
+
+<h3 id="action-items">Action Items</h3>
+<p>Manages action items identified during a meeting.</p>
+<ul>
+  <li>
+    <strong>POST</strong> <code>/action_items/</code> - Create a new action item.
+    <pre><code>curl -X POST "http://127.0.0.1:8000/action_items/" \
+-H "Content-Type: application/json" \
+-d '{"meeting_id": 1, "description": "Draft project brief", "assignee_id": 2, "due_date": "2023-12-08", "status": "pending"}'
+</code></pre>
+  </li>
+  <li>
+    <strong>GET</strong> <code>/action_items/{id}</code> - Retrieve an action item.
+    <pre><code>curl -X GET "http://127.0.0.1:8000/action_items/1"
+</code></pre>
+  </li>
+  <li>
+    <strong>PUT</strong> <code>/action_items/{id}</code> - Update an action item.
+    <pre><code>curl -X PUT "http://127.0.0.1:8000/action_items/1" \
+-H "Content-Type: application/json" \
+-d '{"status": "completed"}'
+</code></pre>
+  </li>
+</ul>
+
+<h3 id="decisions">Decisions</h3>
+<p>Manages key decisions made during a meeting.</p>
+<ul>
+  <li>
+    <strong>POST</strong> <code>/decisions/</code> - Record a new decision.
+    <pre><code>curl -X POST "http://127.0.0.1:8000/decisions/" \
+-H "Content-Type: application/json" \
+-d '{"meeting_id": 1, "description": "We will proceed with Option A for the main framework."}'
+</code></pre>
+  </li>
+  <li>
+    <strong>GET</strong> <code>/decisions/{id}</code> - Retrieve a decision.
+    <pre><code>curl -X GET "http://127.0.0.1:8000/decisions/1"
+</code></pre>
+  </li>
+</ul>
+
+<h3 id="meeting-summaries">Meeting Summaries</h3>
+<p>Manages AI-generated or manually created meeting summaries.</p>
+<ul>
+  <li>
+    <strong>POST</strong> <code>/meeting_summaries/</code> - Create a summary for a meeting.
+    <pre><code>curl -X POST "http://127.0.0.1:8000/meeting_summaries/" \
+-H "Content-Type: application/json" \
+-d '{"meeting_id": 1, "summary_text": "The team aligned on the project goals for Q4..."}'
+</code></pre>
+  </li>
+  <li>
+    <strong>GET</strong> <code>/meeting_summaries/{id}</code> - Retrieve a summary.
+    <pre><code>curl -X GET "http://127.0.0.1:8000/meeting_summaries/1"
+</code></pre>
+  </li>
+</ul>
+
+<h3 id="user-integrations">User Integrations</h3>
+<p>Manages user connections to third-party services (Slack, Jira, etc.).</p>
+<ul>
+  <li>
+    <strong>POST</strong> <code>/user_integrations/</code> - Add a new integration for a user.
+    <pre><code>curl -X POST "http://127.0.0.1:8000/user_integrations/" \
+-H "Content-Type: application/json" \
+-d '{"user_id": 1, "integration_type": "slack", "auth_token": "xoxb-some-secret-token"}'
+</code></pre>
+  </li>
+  <li>
+    <strong>GET</strong> <code>/user_integrations/{id}</code> - Retrieve an integration.
+    <pre><code>curl -X GET "http://127.0.0.1:8000/user_integrations/1"
+</code></pre>
+  </li>
+</ul>
+
+<h3 id="meeting-analytics">Meeting Analytics</h3>
+<p>Stores high-level analytics for a meeting. <em>(Note: Update is not supported.)</em></p>
+<ul>
+  <li>
+    <strong>POST</strong> <code>/meeting_analytics/</code> - Create an analytics record for a meeting.
+    <pre><code>curl -X POST "http://127.0.0.1:8000/meeting_analytics/" \
+-H "Content-Type: application/json" \
+-d '{"meeting_id": 1, "participation_equity": 0.85, "sentiment_score": 0.7}'
+</code></pre>
+  </li>
+  <li>
+    <strong>GET</strong> <code>/meeting_analytics/{id}</code> - Retrieve meeting analytics.
+    <pre><code>curl -X GET "http://127.0.0.1:8000/meeting_analytics/1"
+</code></pre>
+  </li>
+</ul>
+
+<h3 id="participant-analytics">Participant Analytics</h3>
+<p>Stores analytics for a specific participant in a meeting. <em>(Note: Update is not supported.)</em></p>
+<ul>
+  <li>
+    <strong>POST</strong> <code>/participant_analytics/</code> - Create a participant analytics record.
+    <pre><code>curl -X POST "http://127.0.0.1:8000/participant_analytics/" \
+-H "Content-Type: application/json" \
+-d '{"participant_id": 1, "meeting_id": 1, "speaking_time_seconds": 540}'
+</code></pre>
+  </li>
+  <li>
+    <strong>GET</strong> <code>/participant_analytics/{id}</code> - Retrieve participant analytics.
+    <pre><code>curl -X GET "http://127.0.0.1:8000/participant_analytics/1"
+</code></pre>
+  </li>
+</ul>
+
+</body>
+</html>

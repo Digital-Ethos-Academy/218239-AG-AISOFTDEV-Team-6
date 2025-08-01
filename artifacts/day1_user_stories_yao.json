@@ -1,0 +1,32 @@
+[
+  {
+    "id": "US001",
+    "persona": "Sarah Chen - Executive Program Manager",
+    "user_story": "As an Executive Program Manager, I want the AI assistant to automatically generate structured meeting summaries with key decisions and action items so that I can maintain clear program documentation across multiple initiatives without spending time on manual note-taking.",
+    "acceptance_criteria": "Given I am in a cross-functional program meeting\nWhen the AI assistant is active during the meeting\nThen it should automatically transcribe the conversation with speaker identification\nAnd it should generate a structured summary with sections for key decisions, discussion points, and action items\nAnd it should distinguish between main topics and tangential discussions\nAnd the summary should be available within 5 minutes of meeting end\nAnd I should be able to edit and approve the summary before distribution"
+  },
+  {
+    "id": "US002",
+    "persona": "Marcus Rodriguez - Engineering Team Lead",
+    "user_story": "As an Engineering Team Lead, I want the AI assistant to monitor participation balance and gently encourage quieter team members to contribute so that I can ensure all engineers have input on technical decisions and identify knowledge gaps.",
+    "acceptance_criteria": "Given I am facilitating a technical team meeting\nWhen the AI assistant detects uneven participation patterns\nThen it should provide me with real-time visual indicators showing speaking time distribution\nAnd it should suggest optimal moments to solicit input from quiet participants\nAnd it should identify when someone with relevant expertise hasn't contributed\nAnd it should provide post-meeting feedback on participation patterns\nAnd suggestions should be delivered discreetly without disrupting meeting flow"
+  },
+  {
+    "id": "US003",
+    "persona": "Jennifer Park - Chief of Staff",
+    "user_story": "As a Chief of Staff, I want the AI assistant to automatically prepare executive meeting briefs by analyzing previous decisions and relevant company data so that leadership meetings are strategic and well-informed without requiring extensive manual preparation.",
+    "acceptance_criteria": "Given I have an upcoming executive meeting scheduled\nWhen the AI assistant analyzes the agenda and participant list\nThen it should review previous related meeting notes and decisions\nAnd it should identify unresolved items requiring leadership attention\nAnd it should generate a pre-meeting brief with relevant context and background\nAnd it should suggest optimal meeting duration based on agenda complexity\nAnd the brief should be available at least 2 hours before the meeting\nAnd I should be able to customize and add additional context to the brief"
+  },
+  {
+    "id": "US004",
+    "persona": "Sarah Chen - Executive Program Manager",
+    "user_story": "As an Executive Program Manager, I want the AI assistant to intelligently assign action items based on participant expertise and current workload so that tasks are distributed optimally and nothing falls through the cracks across my multiple programs.",
+    "acceptance_criteria": "Given action items are identified during a program meeting\nWhen the AI assistant processes the discussion\nThen it should automatically extract clear action items from natural conversation\nAnd it should suggest assignments based on participant skills and current capacity\nAnd it should provide confidence scores for each assignment recommendation\nAnd it should flag potential conflicts or overallocation\nAnd I should be able to review and modify assignments before they are finalized\nAnd assigned individuals should receive automatic notifications with task details and deadlines"
+  },
+  {
+    "id": "US005",
+    "persona": "Marcus Rodriguez - Engineering Team Lead",
+    "user_story": "As an Engineering Team Lead, I want the AI assistant to capture and organize technical diagrams, code snippets, and architectural decisions shared during meetings so that important technical knowledge is preserved and searchable for future reference.",
+    "acceptance_criteria": "Given technical content is shared during an engineering meeting\nWhen screen shares, whiteboard content, or code snippets are presented\nThen the AI assistant should capture visual elements using OCR technology\nAnd it should integrate visual content with corresponding verbal discussions\nAnd it should organize technical decisions in a structured, searchable format\nAnd it should cross-reference discussions with shared documents and diagrams\nAnd the captured content should be accessible in our team's knowledge base\nAnd I should be able to tag and categorize technical decisions for easy retrieval"
+  }
+]
